@@ -1,4 +1,10 @@
-a {
-  color: red; }
+body {
+  font-family: cursive;
+  color: #333;
+  line-height: 1.5;
+  font-size: 18px; }
+
+body {
+  background-color: red; }
 
 /*# sourceMappingURL=style.css.map */
