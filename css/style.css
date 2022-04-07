@@ -1,10 +1,23 @@
-body {
+body, ul li a {
   font-family: cursive;
   color: #333;
   line-height: 1.5;
   font-size: 18px; }
 
 body {
-  background-color: red; }
+  background-color: #FFFFFF; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block; }
+    ul li a:hover {
+      color: cadetblue; }
 
 /*# sourceMappingURL=style.css.map */

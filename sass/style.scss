@@ -1,4 +1,4 @@
-$theme-color: red;
+$theme-color: #FFFFFF;
 
 %commonCSS {
   font-family: cursive;
@@ -10,4 +10,22 @@ $theme-color: red;
 body {
   background-color: $theme-color;
   @extend %commonCSS;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style-type: none;
+    a{
+      @extend %commonCSS;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover{
+      color: cadetblue;
+    }
+  }
 }
