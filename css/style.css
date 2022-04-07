@@ -5,7 +5,7 @@ body, ul li a {
   font-size: 18px; }
 
 body {
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 ul {
   margin: 0;
@@ -16,7 +16,10 @@ ul {
       font-size: 20px;
       text-transform: uppercase;
       text-decoration: none;
-      display: block; }
+      display: block;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     ul li a:hover {
       color: cadetblue; }
 

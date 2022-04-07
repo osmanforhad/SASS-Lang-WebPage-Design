@@ -1,4 +1,4 @@
-$theme-color: #FFFFFF;
+$theme-color: #ffffff;
 
 %commonCSS {
   font-family: cursive;
@@ -7,24 +7,32 @@ $theme-color: #FFFFFF;
   font-size: 18px;
 }
 
+@mixin transition($second) {
+  -webkit-transition: all $second ease;
+  -o-transition: all $second ease;
+  transition: all $second ease;
+}
+
+
 body {
   background-color: $theme-color;
   @extend %commonCSS;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
-  li{
+  li {
     list-style-type: none;
-    a{
+    a {
       @extend %commonCSS;
       font-size: 20px;
       text-transform: uppercase;
       text-decoration: none;
       display: block;
+      @include transition(0.3s);
     }
-    a:hover{
+    a:hover {
       color: cadetblue;
     }
   }
