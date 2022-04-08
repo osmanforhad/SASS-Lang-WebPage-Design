@@ -1,0 +1,4 @@
+@mixin col($colum) {
+  flex-basis: $colum / 12 * 100%;
+  max-width: $colum / 12 * 100%;
+}

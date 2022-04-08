@@ -1,39 +1,27 @@
-$theme-color: #ffffff;
+@import "reset";
+@import "color";
+@import "mixin";
+@import "extend";
 
-%commonCSS {
-  font-family: cursive;
-  color: #333;
-  line-height: 1.5;
-  font-size: 18px;
+body{
+  @extend %common;
 }
-
-@mixin transition($second) {
-  -webkit-transition: all $second ease;
-  -o-transition: all $second ease;
-  transition: all $second ease;
+.row{
+  @extend %flex;
 }
-
-
-body {
-  background-color: $theme-color;
-  @extend %commonCSS;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style-type: none;
-    a {
-      @extend %commonCSS;
-      font-size: 20px;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: block;
-      @include transition(0.3s);
+header{
+  width: calc(100% - 100px);
+  margin: auto;
+  .row{
+    justify-content: space-between;
+    .logo{
+      @extend %col-2;
     }
-    a:hover {
-      color: cadetblue;
+    nav{
+      @extend %col-6;
+    }
+    .contact{
+      @extend %col-4;
     }
   }
 }
