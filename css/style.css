@@ -48,7 +48,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body, header .row nav ul li a {
+body, header .row nav ul li a, section a, h1, p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -60,17 +60,53 @@ body, header .row nav ul li a {
   display: flex;
   flex-wrap: wrap; }
 
-header .row .logo {
+.col-1 {
+  flex-basis: 8.3333333333%;
+  max-width: 8.3333333333%; }
+
+header .row .logo, .col-2 {
   flex-basis: 16.6666666667%;
   max-width: 16.6666666667%; }
 
-header .row .contact {
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%; }
+
+header .row .contact, .col-4 {
   flex-basis: 33.3333333333%;
   max-width: 33.3333333333%; }
 
-header .row nav {
+.col-5 {
+  flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%; }
+
+header .row nav, .col-6 {
   flex-basis: 50%;
   max-width: 50%; }
+
+.col-7 {
+  flex-basis: 58.3333333333%;
+  max-width: 58.3333333333%; }
+
+.col-8 {
+  flex-basis: 66.6666666667%;
+  max-width: 66.6666666667%; }
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%; }
+
+.col-10 {
+  flex-basis: 83.3333333333%;
+  max-width: 83.3333333333%; }
+
+.col-11 {
+  flex-basis: 91.6666666667%;
+  max-width: 91.6666666667%; }
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%; }
 
 header .row nav ul li a, header .row .contact a {
   padding: 12px 30px;
@@ -99,5 +135,21 @@ header {
       color: #fff;
       text-decoration: none;
       border-radius: 5px; }
+
+section {
+  width: calc(100% - 400px);
+  margin: auto;
+  padding: 100px 0; }
+  section a {
+    color: #0044d1;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 5px; }
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1; }
 
 /*# sourceMappingURL=style.css.map */

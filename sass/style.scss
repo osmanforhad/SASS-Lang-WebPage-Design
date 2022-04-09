@@ -54,3 +54,26 @@ header {
     }
   }
 }
+
+section{
+  width: calc(100% - 400px);
+  margin: auto;
+  padding: 100px 0;
+  a{
+    color: $themeColor;
+    @extend %common;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+  }
+}
+h1{
+  @extend %common;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1;
+}
+p{
+  @extend %common;
+}
