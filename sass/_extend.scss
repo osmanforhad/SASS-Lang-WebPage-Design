@@ -45,3 +45,8 @@
 %col-12{
   @include col(12);
 }
+
+%padding{
+  padding:12px 30px;
+  border-radius: 5px;
+}

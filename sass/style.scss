@@ -3,25 +3,54 @@
 @import "mixin";
 @import "extend";
 
-body{
+body {
   @extend %common;
 }
-.row{
+.row {
   @extend %flex;
 }
-header{
+header {
   width: calc(100% - 100px);
   margin: auto;
-  .row{
+  .row {
     justify-content: space-between;
-    .logo{
+    align-items: center;
+    .logo {
       @extend %col-2;
+      a {
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
     }
-    nav{
+    nav {
       @extend %col-6;
+      ul {
+        @extend %flex;
+        justify-content: center;
+        li {
+          list-style-type: none;
+          a {
+            display: block;
+            @extend %common;
+            @extend %padding;
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+          }
+        }
+      }
     }
-    .contact{
+    .contact {
       @extend %col-4;
+      a {
+        background-color: $themeColor;
+        color: #fff;
+        @extend %padding;
+        text-decoration: none;
+        border-radius: $radius;
+      }
     }
   }
 }
